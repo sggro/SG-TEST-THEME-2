@@ -1,0 +1,36 @@
+.emotion--overlay{
+  .unitize-height(@sg-navigation-line-height-mobile + 50);
+}
+
+.content-main {
+  &.is--fullscreen{
+    .unitize(margin-top, @sg-navigation-line-height-mobile - 60);
+  }
+}
+
+@media screen and(min-width: @tabletViewportWidth){
+  .emotion--overlay{
+    .unitize-height(@sg-navigation-line-height-mobile + 50);
+  }
+
+  .content-main {
+    &.is--fullscreen{
+      .unitize(margin-top, @sg-navigation-line-height-mobile - 20);
+    }
+  }
+}
+
+
+
+
+@media screen and(min-width: @tabletLandscapeViewportWidth){
+  .emotion--overlay{
+    .unitize-height(@sg-navigation-line-height + 50);
+  }
+
+  .content-main {
+    &.is--fullscreen{
+      .unitize(margin-top, @sg-navigation-line-height - 20);
+    }
+  }
+}

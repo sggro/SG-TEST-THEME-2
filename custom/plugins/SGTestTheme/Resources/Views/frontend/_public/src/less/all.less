@@ -1,0 +1,256 @@
+.sg-test-theme-tiot-ewe{
+  background-color: #eee;
+  height: 100%;
+  .unitize(padding-top, 45);
+
+  .container{
+    position: relative;
+    height: 100%;
+    background: transparent;
+  }
+
+  .sg-test-theme-tiot-titel{
+    .unitize(font-size, 24);
+    .unitize(padding-left, 25);
+    .unitize(padding-right, 25);
+    .unitize(padding-bottom, 45);
+    font-weight: 900;
+    color: #111;
+    letter-spacing: normal;
+    text-transform: uppercase;
+    line-height: 0.91667;
+
+    &:before{
+      content: "";
+      display: block;
+      background-color: #111;
+      .unitize(width, 50);
+      .unitize(height, 4);
+      .unitize(margin-bottom, 10);
+    }
+  }
+
+  .sg-test-theme-tiot-left-image{
+    .unitize(margin-left, 32);
+    .unitize(margin-right, 32);
+
+    img{
+      .box-shadow(9px 9px 40px 8px rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  .sg-test-theme-tiot-right-image{
+    display: none;
+
+    img{
+      .box-shadow(9px 9px 40px 8px rgba(0, 0, 0, 0.1));
+    }
+  }
+
+  .sg-test-theme-tiot-description-wrapper{
+    background-color: #fff;
+    .unitize-padding(154, 25, 25, 30);
+    .unitize(margin-top, -86);
+    width: 100%;
+
+    .sg-test-theme-tiot-description-titel{
+      .unitize(font-size, 24);
+      font-weight: 400;
+      .unitize(padding-bottom, 45);
+      color: #111;
+    }
+
+    .sg-test-theme-tiot-description{
+      color: #666;
+      line-height: 1.6;
+      .unitize(padding-bottom, 30);
+      .unitize(font-size, 14);
+
+      &:before{
+        content: "";
+        display: inline-block;
+        background-color: #666;
+        .unitize(width, 50);
+        .unitize(height, 1);
+        .unitize(margin-right, 8);
+        vertical-align: middle;
+      }
+    }
+
+    .sg-test-theme-tiot-links-wrapper{
+      width: 100%;
+      text-align: center;
+
+      .sg-test-theme-tiot-link-wrapper{
+        display: inline-block;
+        color: #111;
+        font-weight: bold;
+
+        a{
+          color: #111;
+
+          .sg-test-theme-tiot-link-icon{
+            display: inline-block;
+            .unitize(width, 20);
+
+            .fa-angle-right{
+              transition: padding-right .3s ease;
+              .unitize(padding-right, 8);
+            }
+          }
+
+          &:hover{
+            .sg-test-theme-tiot-link-icon{
+              .fa-angle-right{
+                transition: padding-right .3s ease;
+                .unitize(padding-right, 3);
+              }
+            }
+          }
+        }
+      }
+
+      .sg-test-theme-tiot-read-more-wrapper{
+        .unitize(margin-right, 15);
+      }
+
+      .sg-test-theme-tiot-go-shopping-wrapper{
+        a{
+          &:hover{
+            .fa-angle-right{
+              transition: padding-right .3s ease-in;
+              .unitize(padding-left, 5);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(min-width: @phoneLandscapeViewportWidth){
+  .sg-test-theme-tiot-ewe{
+    .sg-test-theme-tiot-left-image{
+      .unitize(width, 400);
+      margin: 0 auto;
+    }
+  }
+}
+
+
+@media screen and(min-width: @tabletViewportWidth){
+  .sg-test-theme-tiot-ewe{
+    .unitize(padding-top, 45);
+
+    .sg-test-theme-tiot-titel{
+      .unitize(font-size, 24);
+      line-height: 0.86667;
+      .unitize(padding-left, 53);
+      .unitize(padding-right, 53);
+      padding-bottom: 0;
+
+      &:before{
+        .unitize(margin-bottom, 15);
+      }
+    }
+
+    .sg-test-theme-tiot-left-image{
+      position: absolute;
+      width: 50%;
+      .unitize(left, 50);
+      .unitize(top, 132);
+      z-index: 90;
+      .unitize(padding-left, 28);
+      .unitize(padding-right, 28);
+    }
+
+    .sg-test-theme-tiot-right-image{
+      display: block;
+      position: absolute;
+      width: 50%;
+      .unitize(right, 50);
+      .unitize(top, 70);
+      z-index: 80;
+      .unitize(padding-right, 28);
+      .unitize(padding-left, 28);
+    }
+
+    .sg-test-theme-tiot-description-wrapper{
+      .unitize(margin-top, 220);
+      .unitize(margin-left, 53);
+      .unitize(margin-right, 53);
+      width: auto;
+
+      .sg-test-theme-tiot-links-wrapper{
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media screen and(min-width: @tabletLandscapeViewportWidth){
+  .sg-test-theme-tiot-ewe{
+    .sg-test-theme-tiot-titel{
+      .unitize(padding-left, 72);
+      .unitize(padding-right, 72);
+    }
+
+    .sg-test-theme-tiot-left-image{
+      .unitize(padding-left, 58);
+      .unitize(padding-right, 13);
+    }
+
+    .sg-test-theme-tiot-right-image{
+      .unitize(padding-right, 58);
+      .unitize(padding-left, 13);
+    }
+
+    .sg-test-theme-tiot-description-wrapper{
+      margin-top: 0;
+      position: absolute;
+      .unitize(width, 440);
+      right: 0;
+      .unitize(top, 300);
+      .unitize-padding(77, 40, 30, 80);
+      .unitize(margin-left, 72);
+      .unitize(margin-right, 72);
+    }
+  }
+}
+
+@media screen and(min-width: @desktopViewportWidth){
+  .sg-test-theme-tiot-ewe{
+    .sg-test-theme-tiot-titel{
+      .unitize(font-size, 30);
+
+      &:before{
+        .unitize(margin-bottom, 20);
+      }
+    }
+
+    .sg-test-theme-tiot-left-image{
+      .unitize(padding-left, 30);
+      .unitize(padding-right, 0);
+      .unitize(left, 47);
+      .unitize(top, 100);
+    }
+
+    .sg-test-theme-tiot-right-image{
+      .unitize(padding-left, 0);
+      .unitize(padding-right, 30);
+      .unitize(right, 47);
+      .unitize(top, 10);
+    }
+
+    .sg-test-theme-tiot-description-wrapper{
+      .unitize(width, 600);
+      .unitize-padding(77, 56.250, 45, 100);
+      .unitize(margin-right, 27);
+      .unitize(top, 362);
+
+      .sg-test-theme-tiot-description-titel{
+        font-weight: 600;
+      }
+    }
+  }
+}
